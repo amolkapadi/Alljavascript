@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript QuerySelector</title>
+</head>
+
+<body>
+    <!-- Introduction to JavaScript querySelector() and querySelectorAll() methods
+    The querySelector is a JavaScript method that plays a vital role in the searching of elements.
+    1. querySelector()- method allows you to select the first element that matches one or more CSS selectors.
+    It may return 'null' if no match is found
+    syntax-element = document.querySelector(selectors); 
+    2.querySelectorAll ()- method is a method that is used to return all the matching values of the 
+    specified CSS selector or group of a CSS selector. 
+    syntax-elementList = parentNode . querySelectorAll (selectors);   -->
+
+    <h1> JavaScript Query Selector()</h1>
+    <h1 class="myClass">Class 1</h1>
+    <p class="myClass"> Myclass</p>
+    <div id="firstid">
+        <p> It is the div p paragraph</p>
+        <p class="pclass"> div p class</p>
+    </div>
+
+    <script>
+        var e=document.querySelector("p");  
+        console.log(e);   
+     </script>  
+
+
+     <!-- <h1> JavaScript Query SelectorAll()</h1>
+    <h1 class="myClass">Class 1</h1>
+    <p class="myClass"> Myclass</p>
+    <div id="firstid">
+        <p> It is the div p paragraph</p>
+        <p class="pclass"> div p class</p>
+    </div>
+    <p class="pclass"> div p class</p>
+    <script>
+        //Element selector  
+        var e = document.querySelectorAll("p");
+        console.log(e);   
+    </script> -->
+
+</body>
+
+</html>

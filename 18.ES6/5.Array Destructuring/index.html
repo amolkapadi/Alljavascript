@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array destructuring</title>
+</head>
+<body>
+
+    <!-- Destructuring means to break down a complex structure into simpler parts. 
+    With the syntax of destructuring, you can extract smaller fragments from objects 
+    and arrays.It can be used for assignments and declaration of a variable.
+    Destructuring is an efficient way to extract multiple values from
+    data that is stored in arrays or objects.
+    When destructuring an array, we use their positions (or index) in an assignment. -->
+
+
+    <script>
+        var skill=["html","css","js","reactjs"];
+        document.write(skill + "<br>");
+        
+        document.write(skill[0] + " " + skill[1]+ " " +skill[2] +"<br>");
+        //Array destructuring:-
+        var [a,b,c]=skill;
+        document.write(`${a} ${b} ${c}`);
+    </script>  
+</body>
+</html>

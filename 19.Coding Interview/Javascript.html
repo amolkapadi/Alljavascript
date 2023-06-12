@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Interview Coding </h2>
+    <!-- <h1>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h1>
+    <h1>1 2 3 4 5 6 7 8 9 10</h1> -->
+   <script>
+    //1.hositeing
+    // a=10;
+    // document.write(a);
+    // var a;
+
+    //2.Multiply by 2
+    // const a =[1,2,3,4,5,6,7,8,9,10]
+    // const b=a.map((res)=>res*2);
+    // document.write(b);
+
+    //3.find even number
+    // const b=a.filter((res)=>res%2==0);
+    // document.write(b)
+
+    //4.odd number
+    // const b=a.filter((res)=>res%2 != 0)
+    // document.write(b)
+
+    //5.remove non-repetive number 
+    const arr=[1,2,1,2,4,2,5,7,6,7,6];
+    const b=arr.filter((res)=>arr.indexOf(res)==arr.lastIndexOf(res));
+     document.write(b);
+
+    //6.remove reputed number from array
+    // const b=arr.filter((res,index)=>arr.indexOf(res)==index)
+    // document.write(b);
+
+    //7.find sum of array
+    // const b=arr.reduce(function(acc,val){
+    //     return acc+val
+        
+    // })
+    // document.write(b)
+
+    //8.callback function
+    // function Demo(callback){
+    //     document.write("This is first" + "<br>")
+    //     callback()
+    // }
+    // function callMe(){
+    //     document.write("This is a callback function")
+    // }
+    // Demo(callMe)
+    //9.print pattren 
+    // let n=5;
+    // let string="";
+    // for(let i=1;i<=n;i++){
+    //     for(let j=0;j<i;j++){
+    //         string += "*"
+    //     }
+    //     string += '\n' + "<br>"
+    // }
+    // document.write(string)
+
+    //10.swap 2 number without 3rd variable
+    // var a=10,b=20;
+    // [a,b]=[b,a]
+    // document.write(`${a} ${b}`);
+
+    //
+    </script>
+</body>
+</html>

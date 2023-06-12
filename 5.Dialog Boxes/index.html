@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- JavaScript - Dialog Boxes
+    1.Alert Dialog Box
+    2.Confirmation Dialog Box
+    3.Prompt Dialog Box -->
+    <script>
+        //1.Alert Dialog Box
+       // alert("Learn javascript")
+        // var a=100;
+        // var b=200;
+        // if(a<b){
+        //     alert("A is a Greter than")
+        // }else{
+        //     alert("B is a less than")
+        // }
+
+        //  2.Confirmation Dialog Box
+        // var a=confirm("Do you like javascript")
+        // alert(a)
+
+        //3.Prompt Dialog Box
+        var per = prompt("Enter your percentage");
+        if(per >= 80 && per <= 100){
+            document.write("You are in Merit")
+        }else if(per >= 60 && per <= 80){
+            document.write("You are in 1st Class")
+        }else if(per >= 45 && per <= 60){
+            document.write("You are in 2rd Class")
+        }else if(per >= 33 && per <= 45){
+            document.write("You are in 3rd Class")
+        }else if(per < 33){
+            document.write("You are Fail");
+        }else{
+            document.write("Please Enter Valid Percentage")
+        }
+        
+    </script>
+</body>
+</html>

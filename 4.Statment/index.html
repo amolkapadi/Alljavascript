@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    1.If Statement-It evaluates the content only if expression is true. 
+    2.If else statement-It evaluates the content whether condition is true of false. 
+    3.if else if statement-It evaluates the content only if expression is true
+     from several expressions.
+    4.Switch statement-
+    used to execute one code from multiple expressions. It is just like else
+     if statement that we have learned in previous page. But it is
+     convenient than if..else..if because it can be used with numbers, characters 
+    -->
+
+    <script>
+        //1.if Statement
+
+        // var a = 20;
+        // if (a > 10) {
+        //     document.write("value of a is greater than 10");
+        // }
+
+        // var a=10;
+        // if(a==100){
+        //     alert("both value are equal")
+        // }else{
+        //     alert("both value are not Equal");
+        // }
+        //2.if else Statement
+
+        // var a = 20;
+        // if (a > 10) {
+        //     document.write("value of a is greater than 10");
+        // } else {
+        //     document.write("value of a is less than 10");
+        // }
+
+        //3.If...else if statement
+        // var a = 20;
+        // if (a == 10) {
+        //     document.write("a is equal to 10");
+        // }
+        // else if (a == 15) {
+        //     document.write("a is equal to 15");
+        // }
+        // else if (a == 20) {
+        //     document.write("a is equal to 20");
+        // }
+        // else {
+        //     document.write("a is not equal to 10, 15 or 20");
+        // }
+
+
+
+        //4.Switch Statement 
+        var grade = 'F';
+        var result;
+        switch (grade) {
+            case 'A':
+                result = "A Grade";
+                break;
+            case 'B':
+                result = "B Grade";
+                break;
+            case 'C':
+                result = "C Grade";
+                break;
+            default:
+                result = "No Grade";
+        }
+        document.write(result);  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring </title>
+</head>
+<body>
+    <!-- assigns properties of an object to individual variables.
+    Destructuring allows us to extract multiple properties, or items, 
+    from an array​ at a time.
+    Destructuring is a JavaScript expression that allows us to extract data 
+    from arrays, objects, and maps and set them into new, distinct variables.
+    -->
+    <script>
+        var student={
+            name:"jay",
+            city:"nashik",
+            amout:2000
+        }
+        var {name ,city, amout}=student;
+        //without Object Destructuring
+        document.write(student.name + " " + student.city + " " + student.amout);
+        //Object Destructuring
+        document.write(name + " "+  city +" " + amout);
+        //tempalte String
+        document.write(`${name} ${city} ${amout}`);
+
+    </script>
+</body>
+</html>

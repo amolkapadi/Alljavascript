@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+</head>
+<body>
+    <!-- The document object represents the whole html document.
+    When html document is loaded in the browser, it becomes a document object. 
+    It is the root element that represents the html document. I
+    DOM Target Method-
+    1.document.getElementById()
+    2.document.getElementsByClassName()
+    3.document.getElementsByTagName()
+
+    other Method-
+    document,document.all,document.head,document.title,document.body,
+    document.links,document.URL,document.images etc ...
+
+
+    DOM GET AND SET METHOD
+    Get Method=1.innerText ,2.innerHTML,3.Attributes,4.getAttribute,5.getAttributeNode
+    Set Method=1.innerText ,2.innerHTML,3.set Attribute,4.Attribute,5.removeAttribute
+     -->
+
+     <!--getElementById Example-->
+        <!-- <form>  
+        Enter No:<input type="text" id="number" name="number"/><br/>  
+        <input type="button" value="cube" onclick="getcube()"/>  
+        </form>  
+     <script >  
+        function getcube(){  
+
+        var number=document.getElementById("number").value;  
+        alert(number*number*number); 
+        }  
+    </script>   -->
+
+    <!--getElementsByClassName-->
+        <!-- <div class="Class">  
+              This is a simple class implementation  
+        </div>  
+        <script >  
+        var x=document.getElementsByClassName('Class');  
+        document.write("On calling x, it will return an arrsy-like object: <br>");  
+    </script>   -->
+
+    <!--1.innerText Get method-->
+    <h1 id="a">This is a innerText</h1>
+    <script>
+        var a=document.getElementById("a").innerText="good morning";
+       console.log(a);
+    </script>
+
+    <!--2.innerhtml-->
+
+</body>
+</html>

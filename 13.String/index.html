@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String</title>
+</head>
+
+<body>
+    <h1>Javascript String</h1>
+    <!-- JavaScript string is an object that represents a sequence of characters.
+    There are 2 ways to create string in JavaScript
+    1.By string literal
+    2.By string object (using new keyword) -->
+    <script>
+        // var str="This is string literal";  
+        // document.write(str);  
+
+
+        // var stringname=new String("hello javascript string");  
+        // document.write(stringname);  
+
+        //string properties
+        //1.Lenght-find the lenth of string
+        // var a="javascript string";
+        // var b=  a.length;
+        // document.write(b);
+
+        //2.toLowerCase()-It converts the given string into lowercase letter.
+        // var a="JAVASCRIPT";
+        // var b=a.toLowerCase();
+        // document.write(b);
+
+        //3.toUpperCase()-It converts the given string into uppercase letter.
+        // var a="javascript";
+        // var b=a.toUpperCase();
+        // document.write(b);
+
+        //4. includes()-method returns true if a string contains a specified string.
+        //Otherwise it returns false.
+        //includes() method is case sensitive.
+
+        // let text = "Hello world, welcome to the universe.";
+        // let result = text.includes("world");
+        // document.write(result)  //true
+
+        // let text = "Hello world, welcome to the universe.";
+        // let result = text.includes("good");
+        // document.write(result)  //false
+
+
+        //5.startsWith()- method returns true if a string starts with a specified string.
+        //Otherwise it returns false.
+        //startsWith() method is case sensitive.
+        // var text = "Hello world, welcome to the universe.";
+        // var result=  text.startsWith("Hello");
+        // document.write(result); //true
+
+        // let text = "Hello world, welcome to the universe.";
+        // var result=  text.startsWith("good");
+        // document.write(result); //true
+
+        //6.endsWith()- method returns true if a string ends with a specified string.
+        //Otherwise it returns false.
+        //The endsWith() method is case sensitive.
+
+        // let text = "Hello world";
+        // let result = text.endsWith("world");
+        // document.write(result); //true
+
+        // let text = "Hello world";
+        // let result = text.endsWith("good");
+        // document.write(result); //false
+
+        //7.search() - method matches a string against a regular expression **
+        //The search() method returns the index (position) of the first match.
+        //The search() method returns -1 if no match is found.
+        //The search() method is case sensitive.
+
+        // var a = "This is a javascript string method";
+        // var b = a.search("string"); 
+        // document.write(b);  //21 -index number
+
+        //8.The match() -method matches a string against a regular expression **
+        //The match() method returns an array with the matches.
+        //The match() method returns null if no match is found.
+
+
+        var text = "This is a javascript string method";
+        document.write(text  +"<br>")
+        var b=text.match("react");
+        document.write(b);   //null
+
+
+        // var text = "This is a javascript string method";
+        // var b=text.match("method");
+        // document.write(b);  //true
+
+        //9.indexOf() -method is used to search the position of a particular character 
+        //or string in a sequence of given char values. This method is case-sensitive.
+        //The index position of first character in a string is always starts with zero. 
+        //If an element is not present in a string, it returns -1.
+
+        //var web="Learn JavaScript on Javatpoint";  
+        //document.write(web.indexOf('a' +"<br>"));  //2 INDEX NUMBER 
+
+        // we will provide the index value from where the search starts.
+        //document.write(web.indexOf('a',3));  
+
+
+        //10.lastIndexof()-return index number (search index number last)
+        // var a="this is a javascript string method";
+        // var b=a.lastIndexOf("e");
+        // document.write(b); //29 index number
+
+        //11.replace() method searches a string for a value or a regular expression.
+        //The replace() method returns a new string with the value(s) replaced.
+        //The replace() method does not change the original string.
+        // var a="html css js";
+        // document.write(a + "<br>");
+        // var b=a.replace("js","react");
+        // document.write(b);
+
+        //12.trim() method removes whitespace from both sides of a string.
+        //The trim() method does not change the original string.
+        // var a= "       javascript string method         ";
+        // var text=a.trim();
+        // document.write(text);
+
+        //13. charAt()- 
+        //method returns the character at a specified index (position) in a string.
+
+        // var a="This is a javascript";
+        // var b=a.charAt(2);
+        // document.write(b); //i 
+
+        //14.charCodeAt()- method returns the Unicode of the character at a specified index (position) in a string.
+        //The index of the first character is 0, the second is 1, ....
+        //The index of the last character is string length - 1 
+        //charCodeAt() returns a number between 0 and 65535.
+
+        // let text = "HELLO WORLD";
+        // let code = text.charCodeAt(2);
+        // document.write(code);
+
+        //15. concat()- method joins two or more strings.
+        //The concat() method does not change the existing strings.
+        //The concat() method returns a new string.
+
+        // var a="html ";
+        // var b="css";
+        // var c=a.concat(b);
+        // document.write(c);
+
+
+        //16.split()- method splits a string into an array of substrings.
+        //The split() method returns the new array.
+        //The split() method does not change the original string.
+        //If (" ") is used as separator, the string is split between words.
+        // let text = "How are you doing today?";
+        // document.write(text + "<br>");
+        // const myArray = text.split(" ");
+        // document.write(myArray);
+
+
+        //17.repeat() method returns a string with a number of copies of a string.
+        //The repeat() method returns a new string.
+        //The repeat() method does not change the original string.
+        // var a="This is a reapet stirng";
+        // document.write(a + "<br>");
+        // var b=a.repeat(2);
+        // document.write(b); //This is a reapet stirng This is a reapet stirng
+
+
+        //18.slice() method extracts a part of a string.
+        //The slice() method returns the extracted part in a new string.
+        //The slice() method does not change the original string.
+        //The start and end parameters specifies the part of the string to extract.
+        //The first position is 0, the second is 1, ...
+        //A negative number selects from the end of the string.
+
+        // var a = "This is a javascript method";
+        // var b = a.slice(0, 6);
+        // document.write(b); //This i
+
+        //19.substr()-like slice method
+        //syntax-string.substr(start, length)
+        //substr() method extracts a part of a string.
+        //The substr() method begins at a specified position, and returns a specified number of characters.
+        //The substr() method does not change the original string.
+        //To extract characters from the end of the string, use a negative start position.
+   
+   
+        // var a="This is a javascript string";
+        // var b=a.substr(0,8);
+        // document.write(b); //This is
+
+
+   </script>
+</body>
+
+</html>

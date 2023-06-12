@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Method</title>
+</head>
+
+<body>
+    <h1>Javascript Method</h1>
+    <script>
+       // 1.Modify
+        // var skill =["html","css","js"];
+        // document.write(skill + "<br>");
+        // skill[1]="bootstrap5";
+        // document.write(skill + "<br>");
+
+        //2.delete
+    //    var skill =["html","css","js"];
+    //    document.write(skill + "<br>");
+    //   var a=  skill.delete[1];
+         //modify array  first value using index number
+        // document.write(a + "<br>");
+
+
+        // 3.sort-It returns the element of the given array in a sorted order.
+        // var skill =["html","css","js","bootstrap"];
+        // document.write(skill + "<br>");       
+        // var a =skill.sort(); 
+        // document.write(a + "<br>");   
+
+        //4.reverse()-It reverses the elements of given array.
+        // var skill =["html","css","js","bootstrap"];
+        // document.write(skill + "<br>");       
+        // var a=skill.reverse(); 
+        // document.write(a + "<br>");   
+                                                                                                                 
+        //5.pop()-It removes and returns the last element of an array.
+        // var a=["html","css","javascript"];
+        // document.write(a + "<br>");
+        // a.pop();
+        // document.write(a);
+
+        //6.push()-It adds one or more elements to the end of an array.
+        // var a=["html","css","javascript"];
+        // document.write(a +"<br>");
+        // a.push("bootstrap 5");
+        // document.write(a);
+
+        //7.shift()-It removes and returns the first element of an array.
+        // var a=["html","css","javascript"];
+        // document.write(a + "<br>");
+        // a.shift();
+        // document.write(a);
+
+        //8.unshift()-It adds one or more elements in the beginning of the given array.
+        // var a=["html","css","javascript"];
+        // document.write(a + "<br>");
+        // a.unshift("bootstrap 5");
+        // document.write(a);
+
+        //9.concat()-It returns a new array object that contains two or more 
+        //merged arrays.
+        // var a=["html","css","js"];
+        // var b=["bootstrap 5","jQuery"];
+        // var c=a.concat(b);
+        // document.write(c);
+
+        //10.join()-It joins the elements of an array as a string.
+        // var a=["html","css","js"];
+        // document.write(a + "<br>")
+        // document.write(typeof a +"<br>");
+        // var b=a.join();
+        // document.write(b + "<br>");
+        // document.write(typeof b);
+
+        //11.slice()-It returns a new array containing the copy of the part 
+        //of the given array.
+        //This method doesn't change the original array.
+        //syntax-array.slice(start,end)  
+        //start - It is optional. It represents the index from where the method starts to extract the elements.
+        //end - It is optional. It represents the index at where the method stops extracting elements.
+
+        // var a=["html","css","javascript","bootstrap 5","react"]
+        // document.write(a+"<br>");
+        // document.write(a[1] +"<br>")
+        // document.write(a[3] +"<br>")
+        // var b=a.slice(2,5);
+        // document.write(b);
+
+        //12.splice()-It add/remove elements to/from the given array.
+        //Syntax-array.splice(index, howmany, item1, ....., itemX)
+
+        // var a=["html","css","javascript","bootstrap","node"];
+        // document.write(a +"<br>");
+        // a.splice(2,1,"react");
+        // document.write(a);
+
+      //.splice upadate method()-it update element in array return new array.
+        // var a=["html","css","javascript","bootstrap","node"];
+        // document.write(a +"<br>");
+        // a.splice(1,1,"CSS");
+        // document.write(a);
+
+        //13.isArray()-It tests if the passed value is an array.
+        //syntax-Array.isArray(obj_value);  
+        // var a=["html","css","javascript"];
+        // document.write(a+"<br>");
+        // var b=Array.isArray(a);
+        // document.write(b +"<br>");   //true 
+
+        // var c="html css javascript";
+        // document.write(c +"<br>");
+        // var d=Array.isArray(b);
+        // document.write(d);
+
+        //14.indexOf()-It searches the specified element in the given array 
+        //and returns the index of the first match.
+
+        //sytax-array.indexOf(element,index)  
+
+        // var a = ["html", "css", "javascript", "html"];
+        // document.write(a + "<br>");
+        // var b=a.indexOf("html");
+        // document.write(b);
+
+        //If an element is not present in an array, it returns -1.
+        // var c=a.indexOf("js")
+
+        //document.write(b);
+        //document.write(c);
+
+        //15. includes()-checks whether the given array contains the specified element.
+        //result -true /false
+
+        // var arr = ["AngularJS", "Node.js", "JQuery"]
+        // var result = arr.includes("AngularJS5");
+        // document.writeln(result);    //true
+
+        //16.some()-
+        // perform testing and checks if atleast a single array element passes the test, 
+        // implemented by the provided function. 
+        // If the test is passed, it returns true. Else, returns false.
+        //Example 1-false
+        // var ages=[10,2,19,2];
+        // document.write(ages +"<br>");
+
+        // var b=ages.some(voting);
+        // document.write(b);
+
+        // function voting(ages){
+        //     console.log(ages);
+        //     return ages>18;
+        // }
+
+        //Example 2- true
+        // var ages = [10, 18, 42, 2];
+        // document.write(ages + "<br>");
+
+        // var b = ages.some(voting);
+        // document.write(b);
+
+        // function voting(ages) {
+        //     return ages > 18;
+        // }
+
+
+        //17.every()-It determines whether all the elements of an 
+        //array are satisfying the provided function conditions.
+        // It returns true when each given array element 
+        //satisfying the condition otherwise false.
+        // function test(element, index, array) {
+        //     return index < 4;
+        // }
+        // document.writeln([21, 32, 2, 43].every(test)); //true  
+        // document.writeln([21, 32, 2, 43, 35].every(test)); //false  
+
+
+        //18.fin-d()-It returns the value of the first element in the given array 
+        //that satisfies the specified condition.
+        //var a=[9,10,20,18,32];
+        // document.write(a +"<br>");
+        // var b=a.find((result)=>result<20);
+        // document.write(b);
+        //output-9
+        // var b=a.find(voting);
+        // document.write(b)
+        //  function voting(a){
+        //     return a>17;
+        //  }
+        //output-20
+
+
+
+        //19.filter()-filter and extract the element of an array that satisfying
+        // the provided condition. 
+        //It doesn't change the original array.
+        //  var a =[20,30,12,5,3];
+        //  document.write(a +"<br>");
+
+        //  var b=a.filter(voting);
+        //  document.write(b);
+
+        //  function voting(a){
+        //     console.log(a);
+        //     return a>18
+        //  }
+
+        //20.findIndex-return a index number.
+        //It returns the index value of the first element in the 
+        //given array that satisfies the specified condition.
+        // var a =[2,30,12,5,3];
+        //  document.write(a +"<br>");
+
+        //  var b=a.findIndex(voting);
+        //  document.write(b);
+
+        //  function voting(a){
+        //     return a>18
+        //  }
+        //output index number-1
+
+
+        //21.map()-array map() method calls the specified function for every 
+        //array element and returns the new array.
+        // This method doesn't change the original array.
+        //example 1
+        //  var a=["html","css","javascript"];
+        //  document.write(a + "<br>");
+        //  var b=a.map((result)=>result);
+        //  document.write(b);
+
+        //example 2
+        // var arr = [2, 4, 6];
+        // var result = arr.map(x => x * 3);
+        // document.writeln(result);
+
+        //22.reduce(function, initial)-
+        //It executes a provided function for each value from left to right and 
+        //reduces the array to a single value.
+        // executes a reducer function for array element. 
+        //The reduce() method returns a single value: the function's accumulated result
+        //syntax-
+        //function callbackFn(previousValue, currentValue, currentIndex, array) 
+        // debugger; 
+        // let numbers = [1, 2, 3];
+        // debugger;
+        // let sum = numbers.reduce(function (previousValue, currentValue) {
+        // debugger;
+        //     return previousValue + currentValue;
+        // });
+      
+        // document.write(sum);
+
+        //23.toString()-
+        //convert array to string
+        // var a=["html","css","javascript"];
+        // document.write( typeof a +"<br>");
+        // var b=a.toString();
+        // document.write(b +"<br>")
+        // document.write(typeof b)
+            
+        //24.forEach()-
+        // forEach() method is used to invoke the specified function once for each array element.
+    //    var a=["html","css","javascript"];
+    //     a.forEach(function(result){
+    //         document.write(result);
+    //     });
+            //print index number
+        //   a.forEach(function(result,index){
+        //     document.write(index + result +"<br>" )
+        // })
+    </script>
+</body>
+
+</html>

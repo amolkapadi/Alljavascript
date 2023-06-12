@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Timer</title>
+</head>
+
+<body>
+    <!-- JavaScript Timer-
+    In JavaScript, a timer is created to execute a task or 
+    any function at a particular time. Basically, the timer is used to delay 
+    the execution of the program or to execute the JavaScript code in a regular 
+    time interval.With the help of timer, we can delay the execution of the code.
+    Two timer functions setInterval() and setTimeout().
+
+
+    1.setTimeout()-
+    The setTimeout() method executes a block of code after the specified time. 
+    The method executes the code only once. 
+    The setTimeout() function helps the users to delay the execution of code. 
+    The setTimeout() method accepts two parameters in which one is a user-defined 
+    function,and another is the time parameter to delay the execution. The time parameter holds 
+    the time in milliseconds (1 second = 1000 milliseconds), which is optional to pass.
+    syntax-setTimeout(function, milliseconds)   -->
+
+    <!--Example setTimeOut-->
+    <!-- <button onclick="setTimeout(Demo,2000);">Click me</button>
+    <script>
+        function Demo(){
+            alert("This is a setTimeout Timer ")
+        }
+    </script> -->
+
+
+    <!-- 2.setInterval()-
+    The setInterval method is a bit similar to the setTimeout() function.
+    It executes the specified function repeatedly after a time interval.
+    Or we can simply say that a function is executed repeatedly after a specific
+    amount of time provided by the user in this function.
+    For example - Display updated time in every five seconds. -->
+    <!--Example setTimeEnterval-->
+    <button onclick="setInterval(Demo,2000);">Click me</button>
+    <script>
+        function Demo() {
+            alert("This is a setTimeout Timer ")
+        }
+    </script>
+    
+</body>
+
+</html>

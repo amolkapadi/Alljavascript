@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Object</title>
+</head>
+
+<body>
+    <!-- A javaScript object is an entity having state and behavior (properties and method). 
+    For example: car, pen, bike, chair, glass, keyboard, monitor etc. 
+    JavaScript is an object-based language. Everything is an object in JavaScript.
+-->
+    <script>
+        //Creating Objects in JavaScript
+        //1) JavaScript Object by object literal
+        // emp = { id: 102, name: "Shyam Kumar", salary: 40000 }
+        // document.write(emp.id + " " + emp.name + " " + emp.salary);
+
+        //2) By creating instance of Object
+        //new keyword is used to create object.
+        // var emp = new Object();
+        // emp.id = 101;
+        // emp.name = "Ravi Malik";
+        // emp.salary = 50000;
+        // document.write(emp.id + " " + emp.name + " " + emp.salary); 
+
+        //3)Array in object 
+        // var a={
+        //     fname:"jay",
+        //     laname:"patil",
+        //     age:20,
+        //     email:"jay@gmail.com"
+        // }
+        // document.write(a.fname+" "+a.laname+" "+a.age+" "+a.email);
+
+        //4.function in object
+        var a={
+            fname:"jay",
+            laname:"patil",
+            age:20,
+            email:"jay@gmail.com",
+            sallary: function(){
+                return 2000
+            }
+        }
+        document.write(a.fname+" "+a.laname+" "+a.age+" "+a.email +"<br>");
+        document.write(a.sallary());
+    </script>
+</body>
+
+</html>

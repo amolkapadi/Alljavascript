@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Interview</title>
+</head>
+
+<body>
+    <script>
+        //1.hoisting example
+        // a=10;
+        // document.write(a);
+        // var a; 
+
+        //2.callback function
+        // function Demo(name,callMe){
+        //     document.write("First function" + name +"<br>")
+        //     callMe();
+        // }
+        // //callback function
+        // function callBack(){
+        //     document.write("This is a callback function");
+        // }
+        // Demo("javascript",callBack);
+
+        //3.print the given array multiply by 2
+        // var arr=[1,2,3,4,5,6,7,8,9,10];
+        // var mul=arr.map(item=>item*2);
+        // document.write(mul);
+
+        //4.print the given array odd number
+        // var arr=[1,2,3,4,5,6,7,8,9,10]
+        // var odd=arr.filter(item=>item%2 === 0)
+        // document.write(odd);
+
+        //5.remove dublicates in array
+        //option 1->
+        // var a = ["a", "b", "a", "c", "d", "e", "e", "b"];
+        // document.write("orignal Array =" + a + "<br>");
+
+        // var dublicates = () => {
+        //     return [... new Set(a)]
+        // }
+        // document.write(dublicates());
+
+        //option 2->
+        // var a=["a","b","a","c","d","e","e","b"];
+        // var b=()=>{
+        //     return a.filter(function(res,index){
+        //         return a.indexOf(res)==index;
+        //     })
+        // }
+        // document.write(b())
+
+        //6.find non-repetitive number,that are only once in given array 
+        // option 1
+        // var x = [1, 1, 2, 3, 2, 4]
+        // var res = []
+        // x.map(d => {
+        //     if (res.includes(d)) {
+        //         // remove value from array
+        //         res = res.filter((a) => a != d)
+        //     } else {
+        //         // add value to array
+        //         res.push(d)
+        //     }
+        // })
+        // document.write(res);
+
+        //option 2
+        //    var array = [-1, 2, 5, 6, 2, 9, -1, 6, 5, -1, 3],
+        //    unique = array.filter((v, i) => array.indexOf(v) === array.lastIndexOf(v));
+        //    document.write(unique);
+
+
+        //option 3
+        // var a = [1, 5, 2, 4, 5, 6, 2, 8, 4, 1]
+        // var b = a.filter((res) => a.indexOf(res) === a.lastIndexOf(res));
+        // document.write(b);
+
+        //.7 Remove c
+        // let str='abcab'
+        // function nonrepeat(str){
+        //     for(let i=0; i<str.length; i++){
+        //         let j=str.charAt(i)
+        //         if(str.indexOf(j)===str.lastIndexOf(j)){
+        //             return j
+        //         }
+        //     }
+        // }
+        // document.write(nonrepeat(str))
+
+        //non-repetative Value  output 9,3
+        // var array = [-1, 2, 5, 6, 2, 9, -1, 6, 5, -1, 3]
+        // document.write("Origanl Array " + array + "<br>")
+        // var unique = array.filter((v) => array.indexOf(v) === array.lastIndexOf(v));
+        // document.write("Non-repetative Value " + unique + "<br>");
+
+        //Remove repeted value  output -1,2,5,6,9,3
+        // b = array.filter((res, index) => array.indexOf(res) == index);
+        // document.write("Remove repeted value " + b)
+
+
+        //8.swap 2 number with out 3rd variable
+        //(Destructuring Assignment Array Matching)
+        // let a = 5, b = 6;
+        // [a, b] = [b, a];
+        // console.log(`${a} ${b}`);
+
+     
+
+        //11. Left Triangle Pattern in Javascript
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        // let n = 5;
+        // let string = "";
+        // for (let i = 1; i <= n; i++) {
+        //     for (let j = 0; j < i; j++) {
+        //         string += "*";
+        //     }
+        //     string += "\n" + "<br>";
+        // }
+
+        // document.write(string)
+
+
+        //12.Downward Triangle Star Pattern
+        // *****
+        // ****
+        // ***
+        // **
+        // *
+        let n = 5;
+        let string = "";
+        for (let i = 0; i < n; i++) {
+            // printing star
+            for (let k = 0; k < n - i; k++) {
+                string += "*";
+            }
+            string += "\n" + "<br>";
+        }
+        document.write(string);
+    //</script>
+</body>
+
+</html>

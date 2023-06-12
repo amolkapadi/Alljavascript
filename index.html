@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.How to find duplicate elements in a given array?
+        //const a =[1,2,8,2,9,8,4]
+        //const b=a.filter((val,index)=>a.indexOf(val)!==index);
+        //document.write(b + "<br>");  
+        //output :- 2,8
+
+        //2.Remove Duplicate/Reputed number from array
+        // const arr=[1,2,8,2,9,8,4];
+        // const c=arr.filter((val,index)=>arr.indexOf(val)==index)
+        // document.write(c)
+        //output:-1,2,8,9,4
+
+        //3.Remove Non-repetive Number
+        // const arr=[1,2,8,2,9,8,4];
+        // const b=arr.filter((val)=>arr.indexOf(val)==arr.lastIndexOf(val));
+        // document.write(b);
+        // output:-1,9,4
+
+        //4.Print * pattern
+        // let n=5;
+        // let string="";
+        // for(let i=1;i<=n;i++){
+        //     for(let j=0;j<i;j++){
+        //         string +="*"
+        //     }
+        //     string += "<br>"
+        // }
+        // document.write(string);
+
+        //5.String is palindrom
+
+
+        //6.Reverse the string
+        // let str="hello world";
+        // let b=str.split("");
+        // let c=b.reverse().join("");
+        // document.write(c);
+
+        //7.CallBack Function
+        // function Demo(callback){
+        //     document.write("This is a main function" +"<br>")
+        //     callback(); 
+        // }
+        // function CallMe(){
+        //     document.write("This is a call Back Function")
+        // }
+        // Demo(CallMe);
+
+        //8.Swap 2 Number without 3rd Variable
+        // let a=10,b=20;
+        // [a,b]=[b,a];
+        // document.write(`a ${a} b ${b}`)
+
+
+        // let a="hello world"
+        // let b=a.split("");
+        // document.write(b + "<br>");
+        // let c=b.reverse();
+        // document.write(c + "<br>");
+        // let d=c.join("")
+        // document.write(d + "<br>");
+
+        // let arr=[2,3,1,2,3,1,5,6,5,8,9]
+
+        // let a=arr.filter((val,index)=>arr.indexOf(val)==arr.lastIndexOf(val))
+        // document.write(a)
+            
+        //call method:-
+        // function sum(a,b){
+        //     return a+b
+        // }
+        
+        // var result =sum.call(this,5,10)
+        // document.write(result)
+
+        //example 2 object
+        // const stud={
+        //     name:"aadi",
+        //     add:"nashik"
+        // }
+        // function Demo(){
+        //     const str=`my name is ${this.name},${this.add}.`
+        //     document.write(str)
+        // }
+        // Demo.call(stud);
+
+        // Apply method
+        // const stud={
+        //     name:"aadi",
+        //     address:"nashik"
+        // }
+
+        // function Demo(a,b){
+        //     return `My Name is ${this.name} ,${a} my address ${b} ${this.address}`
+        // }
+        // let result =Demo.apply(stud,[10,23]);
+        // document.write(result)
+
+        //bind method-
+        var Demo={
+            name:"aadi",
+            Demo2: function(){
+                document.write(this.name)
+            }
+        }
+        var Demo3=Demo.Demo2.bind(Demo);
+        Demo3();
+
+    </script>
+</body>
+
+</html>

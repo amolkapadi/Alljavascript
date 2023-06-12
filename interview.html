@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Quetions Array Method</title>
+</head>
+
+<body>
+    <script>
+        // 1.removing duplicates from an array
+        //new Set()-A JavaScript Set is a collection of unique values. 
+        //Each value can only occur once in a Set.
+
+        // var a=["html","css","js","bootstrap","html","css"];
+        // document.write(a + "<br>");
+       
+        // var b=[...new Set(a)];
+        // document.write(b);
+
+        //2.Array.isArray-want to check if the variable is Array or not there are 
+        //multiple ways to doing it most common way is the use of instanceof or Arry.isArray.
+
+
+        // let a = [1,1,2,42]
+        // let b = { "name": "Manan" }
+        // document.writeln(a instanceof Array) //true
+        // document.writeln(b instanceof Array) //false
+        // document.writeln(Array.isArray(a));
+        // document.writeln(Array.isArray(b));    
+
+        //3.map()- creates a new array from calling a function for every array element. 
+        //map() calls a function once for each element in an array.
+        //map() does not change the original array.
+        //Example1
+        // let employees = [
+        //     {
+        //         "id": 11,
+        //         "name": "Abhinav",
+        //         "salary": 75000
+        //     },
+        //     {
+        //         "id": 2131,
+        //         "name": "Raj",
+        //         "salary": 62000
+        //     },
+        //     {
+        //         "id": 3012,
+        //         "name": "Raj",
+        //         "salary": 32000
+        //     }]
+        // let idsArray = employees.map(employee => employee.id + " " + employee.name)
+        // document.write(idsArray) //[11,2131,3012]
+
+        //Example 2-
+        // var a=["html","css","javascript"];
+        // document.write(a + "<br>");
+        // var b= a.map(res=>res);
+        // document.write(b);
+
+        //4.filter()-method creates a new array filled with elements
+        // that pass a test provided by a function.
+        
+        // var age =[10,15,20,34];
+        // document.write(age + "<br>");    
+        // function voting(age){
+        //     return age>18
+        // }
+        // var b=age.filter(voting)
+        // document.write(b);
+
+        //5.reduce()-The reduce() method returns a single value: 
+        //the function's accumulated result. 
+
+        // const a=[10,230,20,20];
+        // let sum=a.reduce(function(previousValue,currentValue){
+        //     return previousValue+currentValue
+        // })
+        // document.write(sum);
+
+        //6.sort()-sorting by asending order
+        // var a=["y","z","x"];
+        // document.write(a + "<br>");
+        // a.sort();
+        // document.write(a);
+
+        //7.Sorting  Array in descending order in Javascript (Most efficiently)?
+        // var b=["a","c","b","d"];
+        // document.write(b + "<br>");
+        // var c= b.sort();
+        // document.write(c + "<br>");
+        // c.reverse();
+        // document.write(c + "<br>");
+
+        //8.pop()-its remove the last element of array.
+        // var a=["a","b","c"];
+        // document.write(a + "<br>");
+        // a.pop();
+        // document.write(a + "<br>");
+
+        //9.push()-its add element in array last position.
+        // var a=["html","css"];
+        // document.write(a+"<br>");
+        // a.push("js");
+        // document.write(a+"<br>");
+        
+        //10.shift-its remove the first element in array;
+        // var a =["a","b","c"];
+        // document.write(a + "<br>");
+        // a.shift();
+        // document.write(a + "<br>");
+        
+        //11.unshift-its add the element in first element in array;
+        // var a=["js","react"];
+        // document.write(a + "<br>");
+        // a.unshift("html");
+        // document.write(a + "<br>");
+
+         
+        //12.practice example map method()-
+        var student=[
+
+            {
+                id:1,
+                name:"jay",
+                address:"nashik"
+            },
+            {
+                id:2,
+                name:"vijay",
+                address:"mumbai"
+            },
+            {
+                id:3,
+                name:"raj",
+                address:"pune"
+            }
+        ]       
+        var b=student.map(result=>result.id + " "+ result.name + " "+ result.address);
+        document.write(b);
+    </script>
+</body>
+
+</html>
